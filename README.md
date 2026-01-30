@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed and configured:
 * **MySQL / PostgreSQL**: A local database instance for initial development.
 * **IDE**: IntelliJ IDEA (Recommended for Backend) and VS Code (Recommended for Frontend).
 
-## AWS Implementation
+## AWS Implementation (Planned)
 To enhance scalability and reliability, the project is being deployed using AWS:
 - **AWS EC2**: Hosting the Spring Boot backend via Docker containers.
 - **AWS RDS**: Managing the production PostgreSQL database.
