@@ -13,22 +13,29 @@ This application allows users to track income and expenses, visualize financial 
 - **Cloud Integration**: Image storage and scalable infrastructure migration to AWS.
 
 ## Tech Stack
+| Component | Technologies |
+| :--- | :--- |
 | **Frontend** | React.js, Tailwind CSS, Vite, Lucid React, Axios |
 | **Backend** | Java, Spring Boot, Spring Security, JPA/Hibernate |
 | **Database** | MySQL (Local), PostgreSQL (Production) |
 | **Cloud/Infrastructure** | **AWS (EC2, RDS, S3)**, Docker, Cloudinary |
 
-## ☁️ AWS Implementation
+## Prerequisites
+Before you begin, ensure you have the following installed and configured:
+
+### Development Environment
+* **Java Development Kit (JDK) 17+**: Required for the Spring Boot backend.
+* **Node.js (v18+) & npm**: Required to run the React frontend.
+* **Maven**: For dependency management and building the Java application.
+* **MySQL / PostgreSQL**: A local database instance for initial development.
+* **IDE**: IntelliJ IDEA (Recommended for Backend) and VS Code (Recommended for Frontend).
+
+## AWS Implementation
 To enhance scalability and reliability, the project is being deployed using AWS:
 - **AWS EC2**: Hosting the Spring Boot backend via Docker containers.
 - **AWS RDS**: Managing the production PostgreSQL database.
 - **AWS S3**: Scalable storage for profile images and generated financial reports.
 - **AWS SES**: (Planned) For reliable automated email notifications.
-
-## Project Structure
-- **/backend**: Spring Boot source code, including security configurations and job schedulers.
-- **/frontend**: React source code with Tailwind CSS and data visualization components.
-- **Dockerfile**: Configuration for containerizing the application for AWS deployment.
 
 ## Setup & Installation
 
