@@ -1,5 +1,4 @@
 HELP.md
-.idea
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -32,3 +31,4 @@ build/
 ### VS Code ###
 .vscode/
 src/main/resources/application.properties
+.DS_STORE
