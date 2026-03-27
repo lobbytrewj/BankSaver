@@ -31,7 +31,6 @@ public class JwtUtil {
     private Claims extractAllClaims(String token) {
         return Jwts.parser()
                 .setSigningKey(Keys.hmacShaKeyFor(secret.getBytes()))
-                .build()
                 .parseClaimsJws(token)
                 .getBody();
     }
@@ -54,4 +53,3 @@ public class JwtUtil {
                 .compact();
     }
 }
-
