@@ -18,7 +18,7 @@ public class DashboardController {
 
     @GetMapping
     public ResponseEntity<Map<String, Object>> getDashboardData() {
-        Map<String, Object> dashboardData =  dashboardService.getDashboardData();
+        Map<String, Object> dashboardData = dashboardService.getDashboardData();
         return ResponseEntity.ok(dashboardData);
     }
 }
