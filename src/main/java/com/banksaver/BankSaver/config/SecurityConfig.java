@@ -56,12 +56,14 @@ public class SecurityConfig {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-//hi
     @Bean
     public AuthenticationManager authenticationManager() {
-        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider(appUserDetailsService);
+        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider(); // Empty constructor
 
+        // Use the setter methods to configure the provider
+        authenticationProvider.setUserDetailsService(appUserDetailsService);
         authenticationProvider.setPasswordEncoder(passwordEncoder());
+
         return new ProviderManager(authenticationProvider);
     }
 }

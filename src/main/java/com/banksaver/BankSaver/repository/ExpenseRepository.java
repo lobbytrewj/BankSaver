@@ -1,7 +1,6 @@
 package com.banksaver.BankSaver.repository;
 
 import com.banksaver.BankSaver.entity.ExpenseEntity;
-import org.springframework.boot.data.autoconfigure.web.DataWebProperties;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
